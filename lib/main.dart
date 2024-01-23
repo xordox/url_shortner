@@ -102,6 +102,9 @@ class _HomeState extends State<Home> {
                           ),
                         );
                       });
+                }else{
+                  // ignore: use_build_context_synchronously
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Enter valid url")));
                 }
               },
               child: const Text('Shorten url'),
@@ -135,23 +138,4 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-
-  // Future<String?> shortenUrl({required String url}) async {
-  //   try{
-  //     final result = await http.post(
-  //       Uri.parse('https://cleanuri.com/api/v1/shorten'),
-  //       body: {
-  //         'url': url
-  //       }
-  //     );
-
-  //     if(result.statusCode == 200){
-  //       final jsonResult = jsonDecode(result.body);
-  //       return jsonResult['result_url'];
-  //     }
-  //   }catch (e){
-  //     print('Error ${e.toString()}');
-  //   }
-  //   return null;
-  // }
 }
