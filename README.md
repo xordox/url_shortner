@@ -1,16 +1,15 @@
 # vrit_task_url_shortner
 
-A new Flutter project.
+Url shortening flutter app
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This app is designed to shorten the long urls.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+User Documentation
+1. First copy any url and paste it into available text field in app
+2. Press shortenUrl button
+3. If you've entered invalid url or empty url, you'll be notified through snackbar
+4. For the valid long url, a new shortened url will be generated
+5. You'll be displayed an alert dialog box enabling you to copy the newly generated short url
+6. You'll have access to two new buttons, first one to goto webview using shortened url and next one to generate qr code containing shortened url
